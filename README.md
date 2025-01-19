@@ -12,7 +12,7 @@ This parent project contains all work completed to obtain a Master of Science De
 
 The following modules were completed:
 
-	**MScProject**
+	--Masters Project - Electrode Motion Removal using Deep Learning Methods--
 	
 	Contains a frameowork to train various Deep Learning Models with the aim to remove non-linear noise from Electrocardiogram signals.
 	
