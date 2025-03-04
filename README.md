@@ -67,7 +67,7 @@ This section highlights the projects completed during my Master's program.
 ## 🤖 Deep Learning Projects
 
 * **Description:** Various deep learning projects (Computer Vision, Model Development, Experiment Tracking, Model Deployment, Transfer Learning, Paper Replication)
-* **Technologies:** Python, PyTorch, GCP, Gradio
+* **Technologies:** Python, PyTorch, GCP, Gradio, Hugging Face
 * **Link:** https://github.com/ben120-web/Deep-Learning-Projects.
 
 ---
