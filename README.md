@@ -60,7 +60,7 @@ This section highlights the projects completed during my Master's program.
 
 * **Description:** Code and documentation from a backend software development course.
 * **Technologies:** GO, SQL, Python, Docker, Git
-* **Link:** https://github.com/ben120-web/Back-End-Development-Course
+* **Link:** [https://github.com/ben120-web/Back-End-Development-Course](https://github.com/ben120-web/Deep-Learning-Projects.)
 
 ---
 
