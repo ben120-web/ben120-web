@@ -1,6 +1,6 @@
 # Welcome to my GitHub Profile! 👋
 
-This profile showcases my projects and work, primarily in the fields of Electronics, Physics, and Intelligent Systems.
+This profile showcases my projects and work, primarily in the fields of Intelligent Systems, Control and Estimation theory, and Electronics.
 
 ---
 
