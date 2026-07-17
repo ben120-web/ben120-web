@@ -1,79 +1,51 @@
-# Welcome to my GitHub Profile
+# Ben Russell
 
-This profile showcases my projects and work, primarily in the fields of Intelligent Systems, Control and Estimation theory, and Electronics.
+ML and systems engineer with a Physics BSc and Electronics Engineering MSc. I
+build reliable machine-learning systems from data contracts and algorithm
+design through reproducible training, deployment, observability and CI/CD.
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ben_Russell-0A66C2?logo=linkedin)](https://www.linkedin.com/in/ben-russell-384999189/)
+[![MSc pipeline](https://github.com/ben120-web/Masters/actions/workflows/ci.yml/badge.svg)](https://github.com/ben120-web/Masters/actions/workflows/ci.yml)
+[![Coding agent](https://github.com/ben120-web/Back-End-Development-Course/actions/workflows/ci.yml/badge.svg)](https://github.com/ben120-web/Back-End-Development-Course/actions/workflows/ci.yml)
 
-## 🎓 Master of Science in Electronics Projects
+## Selected engineering work
 
-This section highlights the projects completed during my Master's program.
+| Project | Problem and engineering evidence | Stack | Live evidence |
+| --- | --- | --- | --- |
+| [ECG motion-artefact denoising](https://github.com/ben120-web/Masters) | End-to-end biomedical ML system with subject-grouped data, validation contracts, DVC lineage, tracked experiments, tested inference API, model governance and container delivery. | Python, PyTorch, DVC, MLflow, TensorBoard, FastAPI, Docker, GitHub Actions | [CI](https://github.com/ben120-web/Masters/actions/workflows/ci.yml) · [Space](https://huggingface.co/spaces/ben120/Electrode_Motion_Removal_ECG) · [model card](https://github.com/ben120-web/Masters/blob/main/MODEL_CARD.md) |
+| [Workspace-bounded coding agent](https://github.com/ben120-web/Back-End-Development-Course) | Tool-using agent with bounded filesystem access, path/symlink traversal defences, time-limited subprocesses and adversarial boundary tests. | Python, Google Gen AI SDK, pytest, Ruff | [CI](https://github.com/ben120-web/Back-End-Development-Course/actions/workflows/ci.yml) · [security model](https://github.com/ben120-web/Back-End-Development-Course#security-model) |
+| [FoodVision deployment](https://huggingface.co/spaces/ben120/Food_Classification) | CPU-hosted transfer-learning demo with a documented input domain and explicit out-of-distribution limitations. | PyTorch, EfficientNet, Gradio, Hugging Face Spaces | [live application](https://huggingface.co/spaces/ben120/Food_Classification) |
 
-### 🔬 Masters Project: Electrode Motion Removal using Deep Neural Networks.
+## Capability map
 
-* **Description:** Developed a framework for training various Deep Learning Models to remove non-linear noise from Electrocardiogram (ECG) signals.
-* **Technologies:** Python, PyTorch, MATLAB, Git, GCP, CUDA.
-* **Link:** (https://github.com/ben120-web/Masters/tree/main/Masters%20Project%20-%20Electrode%20Motion%20Removal%20using%20Deep%20Learning%20Methods)
+| Area | Evidence |
+| --- | --- |
+| ML engineering and MLOps | Reproducible [`prepare → train → evaluate`](https://github.com/ben120-web/Masters/blob/main/dvc.yaml) DAG, MLflow/TensorBoard tracking, transparent [reference metrics and promotion decision](https://github.com/ben120-web/Masters/tree/main/reports/reference), model/data documentation and versioned release automation. |
+| Data engineering | Deterministic data preparation, schema and leakage validation, subject-aware splitting, content-addressed DVC outputs and pipeline lineage in the [ECG pipeline](https://github.com/ben120-web/Masters/tree/main/src/ecg_denoising). |
+| Systems and API design | Typed inference contracts, health/readiness endpoints, runtime metrics, non-root containers and a [tool-boundary-focused coding agent](https://github.com/ben120-web/Back-End-Development-Course). |
+| Algorithms and scientific computing | Residual 1-D denoising, signal-quality metrics and documented complexity; [DSP](https://github.com/ben120-web/Masters/tree/main/coursework/digital_signal_processing), [Kalman filtering](https://github.com/ben120-web/Masters/tree/main/coursework/kalman_filter) and a tested [finite-horizon MPC](https://github.com/ben120-web/Masters/blob/main/coursework/quadcopter_control/model_predictive_controller.py). |
+| Applied deep learning | Computer vision, transfer learning, experiment tracking and deployment work retained transparently in the [PyTorch learning archive](https://github.com/ben120-web/Deep-Learning-Projects.). |
+| Delivery and quality | Automated linting, typing, tests, package/container builds, dependency updates, security scanning and tag-driven releases across maintained projects. |
 
-### 📊 Digital Signal Processing
+## How I engineer
 
-* **Description:** Solved various Digital Signal Processing problems, including digital filter design and numerical analysis.
-* **Technologies:** MATLAB, Python
-* **Link:** (https://github.com/ben120-web/Masters/tree/main/Digital%20Signal%20Processing)
+- Start with the data and failure modes: provenance, leakage boundaries, input
+  contracts and measurable baselines before model complexity.
+- Keep research reproducible: version code, parameters, data lineage, metrics
+  and artifacts independently.
+- Treat deployment as part of the model: typed APIs, health checks,
+  observability, least privilege and rollback paths are designed up front.
+- Report limitations honestly. Educational work is labelled as such, and the
+  ECG system is explicitly a research prototype rather than a medical device.
 
-### 🧠 Intelligent Systems and Control
+## Foundations
 
-* **Description:** Implemented Intelligent Systems projects, including Multi-layer Perceptron design for forecasting and numerical problem-solving.
-* **Technologies:** Python, MATLAB, PyTorch
-* **Link:** (https://github.com/ben120-web/Masters/tree/main/Intelligent%20Systems%20And%20Control)
+My Physics and Electronics background informs how I approach ML: derive the
+signal model, establish a conventional baseline, understand identifiability and
+error, then choose the simplest system that meets the operational requirement.
+The MSc archive includes control, estimation, signal processing, intelligent
+systems and wireless sensing work alongside the maintained ML system.
 
-### ⚙️ Control and Estimation Theory
+## Contact
 
-* **Description:** Developed numerical solutions for control and estimation theory problems.
-* **Technologies:** Python
-* **Link:** (https://github.com/ben120-web/Masters/tree/main/Control%20And%20Estimation%20Theory)
-
-### ⚡ Microelectronic Devices and Technology
-
-* **Description:** Solved numerical problems related to microelectronic devices, including transistor fabrication and design.
-* **Link:** (https://github.com/ben120-web/Masters/tree/main/Microelectronic%20Devices%20and%20Technology)
-
-### 🚁 Quadcopter Control and Estimation
-
-* **Description:** Designed control (PID and MPC) and estimation (Kalman filter) systems to control the altitude of a quadcopter.
-* **Technologies:** Python
-* **Link:** (https://github.com/ben120-web/Masters/tree/main/Quadcopter%20-%20Control%20and%20Estimation%20system)
-
-### ✈️ Model Predictive Control for Aircraft Pitch
-
-* **Description:** Developed an MPC controller to control the pitch angle of an aircraft.
-* **Technologies:** Python
-* **Link:** (https://github.com/ben120-web/Masters/tree/main/Aircraft%20-%20Model%20Predictve%20Control%20Design)
-
-### 📡 Wireless Sensors and Systems
-
-* **Description:** Solved numerical problems related to wireless sensors and systems.
-* **Link:** (https://github.com/ben120-web/Masters/tree/main/Wireless%20Sensors%20and%20Systems)
-
----
-
-## 💻 Backend Development Course (Boot.Dev)
-
-* **Description:** Code and documentation from a backend software development course.
-* **Technologies:** GO, SQL, Python, Docker, Git
-* **Link:** https://github.com/ben120-web/Back-End-Development-Course
-
----
-
-## 🤖 Deep Learning Projects
-
-* **Description:** Various deep learning projects (Computer Vision, Model Development, Experiment Tracking, Model Deployment, Transfer Learning, Paper Replication)
-* **Technologies:** Python, PyTorch, GCP, Gradio, Hugging Face
-* **Link:** https://github.com/ben120-web/Deep-Learning-Projects.
-
----
-
-## 🔗 Connect with Me
-
-* https://www.linkedin.com/in/ben-russell-384999189/
-
----
+[LinkedIn](https://www.linkedin.com/in/ben-russell-384999189/) · GitHub: `ben120-web`
