@@ -12,8 +12,8 @@ design through reproducible training, deployment, observability and CI/CD.
 
 | Project | Problem and engineering evidence | Stack | Live evidence |
 | --- | --- | --- | --- |
-| [ECG motion-artefact denoising](https://github.com/ben120-web/Masters) | End-to-end biomedical ML system with subject-grouped data, validation contracts, DVC lineage, tracked experiments, tested inference API, model governance and container delivery. | Python, PyTorch, DVC, MLflow, TensorBoard, FastAPI, Docker, GitHub Actions | [CI](https://github.com/ben120-web/Masters/actions/workflows/ci.yml) · [Space](https://huggingface.co/spaces/ben120/Electrode_Motion_Removal_ECG) · [model card](https://github.com/ben120-web/Masters/blob/main/MODEL_CARD.md) |
-| [Workspace-bounded coding agent](https://github.com/ben120-web/Back-End-Development-Course) | Tool-using agent with bounded filesystem access, path/symlink traversal defences, time-limited subprocesses and adversarial boundary tests. | Python, Google Gen AI SDK, pytest, Ruff | [CI](https://github.com/ben120-web/Back-End-Development-Course/actions/workflows/ci.yml) · [security model](https://github.com/ben120-web/Back-End-Development-Course#security-model) |
+| [ECG motion-artefact denoising](https://github.com/ben120-web/Masters) | End-to-end biomedical ML system with subject-grouped data, validation contracts, DVC lineage, tracked experiments, tested inference API, model governance and container delivery. | Python, PyTorch, DVC, MLflow, TensorBoard, FastAPI, Docker, GitHub Actions | [v1.0.0](https://github.com/ben120-web/Masters/releases/tag/v1.0.0) · [CI](https://github.com/ben120-web/Masters/actions/workflows/ci.yml) · [Space](https://huggingface.co/spaces/ben120/Electrode_Motion_Removal_ECG) · [model card](https://github.com/ben120-web/Masters/blob/main/MODEL_CARD.md) |
+| [Workspace-bounded coding agent](https://github.com/ben120-web/Back-End-Development-Course) | Tool-using agent with bounded filesystem access, path/symlink traversal defences, time-limited subprocesses and adversarial boundary tests. | Python, Google Gen AI SDK, pytest, Ruff | [v1.0.0](https://github.com/ben120-web/Back-End-Development-Course/releases/tag/v1.0.0) · [CI](https://github.com/ben120-web/Back-End-Development-Course/actions/workflows/ci.yml) · [security model](https://github.com/ben120-web/Back-End-Development-Course#security-model) |
 | [FoodVision deployment](https://huggingface.co/spaces/ben120/Food_Classification) | CPU-hosted transfer-learning demo with a documented input domain and explicit out-of-distribution limitations. | PyTorch, EfficientNet, Gradio, Hugging Face Spaces | [live application](https://huggingface.co/spaces/ben120/Food_Classification) |
 
 ## Capability map
@@ -37,6 +37,13 @@ design through reproducible training, deployment, observability and CI/CD.
   observability, least privilege and rollback paths are designed up front.
 - Report limitations honestly. Educational work is labelled as such, and the
   ECG system is explicitly a research prototype rather than a medical device.
+
+## Portfolio baseline
+
+The `v1.0.0` tags mark the first reviewed portfolio baseline. Maintained systems
+are packaged and release-gated; educational and idea repositories use the same
+tag only to identify a cleaned archival snapshot, not to imply production
+support.
 
 ## Foundations
 
