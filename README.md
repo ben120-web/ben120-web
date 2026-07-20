@@ -12,7 +12,8 @@ design through reproducible training, deployment, observability and CI/CD.
 
 | Project | Problem and engineering evidence | Stack | Live evidence |
 | --- | --- | --- | --- |
-| [ECG motion-artefact denoising](https://github.com/ben120-web/Masters) | End-to-end biomedical ML system with subject-grouped data, validation contracts, DVC lineage, tracked experiments, tested inference API, model governance and container delivery. | Python, PyTorch, DVC, MLflow, TensorBoard, FastAPI, Docker, GitHub Actions | [v1.0.0](https://github.com/ben120-web/Masters/releases/tag/v1.0.0) · [CI](https://github.com/ben120-web/Masters/actions/workflows/ci.yml) · [Space](https://huggingface.co/spaces/ben120/Electrode_Motion_Removal_ECG) · [model card](https://github.com/ben120-web/Masters/blob/main/MODEL_CARD.md) |
+| [MSc engineering portfolio](https://github.com/ben120-web/Masters) | End-to-end ECG denoising system plus showcased work in constrained MPC, Kalman estimation, DSP, intelligent systems and wireless sensing. | Python, PyTorch, SciPy, MATLAB, R, DVC, MLflow, FastAPI, Docker | [v1.1.0](https://github.com/ben120-web/Masters/releases/tag/v1.1.0) · [modules](https://github.com/ben120-web/Masters/tree/main/coursework) · [MPC reports](https://github.com/ben120-web/Masters/tree/main/coursework#reproduce-the-maintained-control-demonstrations) · [Space](https://huggingface.co/spaces/ben120/Electrode_Motion_Removal_ECG) |
+| [Edge pose estimation](https://github.com/ben120-web/edge-pose-estimation) | Mobile-backbone COCO keypoint pipeline with heatmap supervision, corrected PCK/OKS evaluation, safe data ingestion, checkpoint selection and cross-platform ONNX inference. | Python, PyTorch, ONNX Runtime, OpenCV, pytest | [v1.1.0](https://github.com/ben120-web/edge-pose-estimation/releases/tag/v1.1.0) · [CI](https://github.com/ben120-web/edge-pose-estimation/actions/workflows/ci.yml) |
 | [Workspace-bounded coding agent](https://github.com/ben120-web/Back-End-Development-Course) | Tool-using agent with bounded filesystem access, path/symlink traversal defences, time-limited subprocesses and adversarial boundary tests. | Python, Google Gen AI SDK, pytest, Ruff | [v1.0.0](https://github.com/ben120-web/Back-End-Development-Course/releases/tag/v1.0.0) · [CI](https://github.com/ben120-web/Back-End-Development-Course/actions/workflows/ci.yml) · [security model](https://github.com/ben120-web/Back-End-Development-Course#security-model) |
 | [FoodVision deployment](https://huggingface.co/spaces/ben120/Food_Classification) | CPU-hosted transfer-learning demo with a documented input domain and explicit out-of-distribution limitations. | PyTorch, EfficientNet, Gradio, Hugging Face Spaces | [live application](https://huggingface.co/spaces/ben120/Food_Classification) |
 
@@ -23,8 +24,8 @@ design through reproducible training, deployment, observability and CI/CD.
 | ML engineering and MLOps | Reproducible [`prepare → train → evaluate`](https://github.com/ben120-web/Masters/blob/main/dvc.yaml) DAG, MLflow/TensorBoard tracking, transparent [reference metrics and promotion decision](https://github.com/ben120-web/Masters/tree/main/reports/reference), model/data documentation and versioned release automation. |
 | Data engineering | Deterministic data preparation, schema and leakage validation, subject-aware splitting, content-addressed DVC outputs and pipeline lineage in the [ECG pipeline](https://github.com/ben120-web/Masters/tree/main/src/ecg_denoising). |
 | Systems and API design | Typed inference contracts, health/readiness endpoints, runtime metrics, non-root containers and a [tool-boundary-focused coding agent](https://github.com/ben120-web/Back-End-Development-Course). |
-| Algorithms and scientific computing | Residual 1-D denoising, signal-quality metrics and documented complexity; [DSP](https://github.com/ben120-web/Masters/tree/main/coursework/digital_signal_processing), [Kalman filtering](https://github.com/ben120-web/Masters/tree/main/coursework/kalman_filter) and a tested [finite-horizon MPC](https://github.com/ben120-web/Masters/blob/main/coursework/quadcopter_control/model_predictive_controller.py). |
-| Applied deep learning | Computer vision, transfer learning, experiment tracking and deployment work retained transparently in the [PyTorch learning archive](https://github.com/ben120-web/Deep-Learning-Projects.). |
+| Algorithms and scientific computing | Residual 1-D denoising and signal-quality metrics; [bounded quadcopter MPC](https://github.com/ben120-web/Masters/blob/main/coursework/quadcopter_control/REPORT.md), [constrained aircraft-pitch MPC](https://github.com/ben120-web/Masters/blob/main/coursework/aircraft_mpc/REPORT.md), DSP and Kalman filtering. |
+| Applied deep learning | Biomedical denoising, [edge pose estimation](https://github.com/ben120-web/edge-pose-estimation), computer vision, transfer learning, experiment tracking and deployment. |
 | Delivery and quality | Automated linting, typing, tests, package/container builds, dependency updates, security scanning and tag-driven releases across maintained projects. |
 
 ## How I engineer
@@ -38,19 +39,19 @@ design through reproducible training, deployment, observability and CI/CD.
 - Report limitations honestly. Educational work is labelled as such, and the
   ECG system is explicitly a research prototype rather than a medical device.
 
-## Portfolio baseline
+## Portfolio releases
 
-The `v1.0.0` tags mark the first reviewed portfolio baseline. Maintained systems
-are packaged and release-gated; educational and idea repositories use the same
-tag only to identify a cleaned archival snapshot, not to imply production
-support.
+The `v1.1.0` MSc and pose-estimation releases package the maintained software,
+tests and report evidence behind the portfolio. Educational simulations are
+identified clearly and do not imply clinical, production or flight-qualified
+use.
 
 ## Foundations
 
 My Physics and Electronics background informs how I approach ML: derive the
 signal model, establish a conventional baseline, understand identifiability and
 error, then choose the simplest system that meets the operational requirement.
-The MSc archive includes control, estimation, signal processing, intelligent
+The MSc portfolio includes control, estimation, signal processing, intelligent
 systems and wireless sensing work alongside the maintained ML system.
 
 ## Contact
