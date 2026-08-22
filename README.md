@@ -1,8 +1,7 @@
 # Ben Russell
 
-ML and systems engineer with a Physics BSc and Electronics Engineering MSc. I
-build reliable machine-learning systems from data contracts and algorithm
-design through reproducible training, deployment, observability and CI/CD.
+Core interests are in Machine Learning Engineering and Signal Processing. I hold a Physics BSc and Electronics Engineering MSc. I
+build reliable systems from structuring governed data pipelines, to both algorithm development and validation.  Ensuring reproducible training/experiments, deployment, observability and relevant CI/CD.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ben_Russell-0A66C2?logo=linkedin)](https://www.linkedin.com/in/ben-russell-384999189/)
 [![MSc pipeline](https://github.com/ben120-web/Masters/actions/workflows/ci.yml/badge.svg)](https://github.com/ben120-web/Masters/actions/workflows/ci.yml)
